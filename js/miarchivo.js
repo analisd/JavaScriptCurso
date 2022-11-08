@@ -58,4 +58,21 @@ function descuentoDeCompra(valor) {
     let totalDescuento = valor * (descuentoDeCompra / 100)
     let descuentoFinalCompra = valor - totalDescuento
     return descuentoFinalCompra
+} 
+
+const sagaCompletaStock = [{ id: 1, producto: "Harry Potter y la piedra filosofal", stock: 10},
+{ id: 2, producto: "Harry Potter y la camara secreta", stock: 13},
+{ id: 3, producto: "Harry Potter y el prisionero de Azcaban", stock: 12 },
+{ id: 4, producto: "Harry Potter y el cáliz de fuego", stock: 30},
+{ id: 5, producto: "Harry Potter y la orden del Fénix", stock: 25},
+{ id: 6, producto: "Harry Potter y el misterio del príncipe", stock: 16},
+{ id: 7, producto: "Harry Potter las reliquias de la muerte", stock: 0}];
+
+for (const producto of sagaCompletaStock) {
+    console.log(producto.id);
+    console.log(producto.producto);
+    console.log(producto.stock);
 }
+
+sagaCompletaStock.pop();
+console.log(sagaCompletaStock);
